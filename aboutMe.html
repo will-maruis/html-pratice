@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="will@dev " />
+    <meta
+      name="description"
+      content=" This page contains all the things 
+     I am learning how to create as I learn HTML."
+    />
+    <title>My First Web Page</title>
+    <link rel="icon" href="/html5.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/index.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>Welcome to my blog Page</h1>
+      <nav>
+        <li><a href="#"> Introduction </a></li>
+        <li><a href="#"> First step </a></li>
+        <li><a href="#"> about Me</a></li>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h2 id="introd">ABOUT Me  </h1>
+
+       
+        <p>I'm a so software engineer, this is my background :  </p>
+        <ol>
+          <li>...Let me tell you.</li>
+          <li>...I plan out my Schedule.</li>
+          <li> ...I use ressources from
+            <abbr title="Mozilla Developer Ressouce"> MDN </abbr>
+          </li>
+        </ol>
+
+        <hr />
+
+        </section>
+         <h2> Contact Me </h2>
+        <p> I will happy to hear you ! </p>
+
+        <br>
+        <br>
+
+        <form  action="https://httpbin.org/get" method="get">
+          <fieldset>
+            <legend> Personnal information </legend>
+             
+            <p>
+              <label for="firstName"> First Name </label>
+              <input type="text" name="firstname" id="firstName"  autofocus="on" placeholder=" will" required>
+            </p>
+            <p>
+              <label for="lastName"> Last Name </label>
+              <input type="text" name="lastname" id="lastName"  autofocus="on" placeholder=" vaboum" required>
+            </p>
+            <p>
+              <label for="lastName"> Your password </label>
+              <input type="password" name="password" id="password"  placeholder="your secret" autofocus="on"  required>
+            </p>
+           <p>
+                        <label for="phone">Phone:</label>
+                        <input type="tel" name="phone" id="phone" placeholder="5555555555"
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                    </p>
+                    <p>
+                        <label for="decade">Favorite Decade:</label>
+                        <input type="number" name="decade" id="decade" min="1950" max="2020" step="10" value="1980">
+                    </p>
+
+            <p>
+              <label for="coffee">Favorite Coffee:</label>
+              <select name="coffee" id="coffee" multiple-size ="5">
+                <optgroup label="Coffees">
+                <option value="Reqular coffee"> REgular coffe</option>
+                <option value="Iced Coffe"> Iced Coffee</option>
+              </optgroup>
+              <optgroup label="Espresso Drinks">
+                 <option value="latte" selected>Latte</option>
+                                <option value="cappuccino">Cappuccino</option>
+                                <option value="cortado">Cortado</option>
+                                <option value="americano">Americano</option>
+              </optgroup>
+              </select>
+            </p>
+          </fieldset>
+           
+          <br>
+
+          <fieldset> 
+            <legend> What is your favorite food ? </legend>
+            <p>
+               <input type="radio" id="tacos" value="tacos" name="food">
+               <label for="tacos"> Tacos </label>
+            </p>
+
+            <p>
+               <input type="radio" id="pizzas" value="pizzas" name="food">
+               <label for="pizzas"> Pizzas </label>
+            </p>
+
+            <p>
+               <input type="radio" id="other" value="other" name="food">
+               <label for="other"> Others </label>
+            </p>
+
+           
+          </fieldset>
+
+           <br>
+                <fieldset>
+                    <legend>Do you have pets?</legend>
+                    <p>
+                        <input type="checkbox" name="pets" id="dog" value="dog">
+                        <label for="dog">Dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="cat" value="cat">
+                        <label for="cat">Cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="fish" value="fish">
+                        <label for="fish">Fish</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="otherPet" value="otherPet">
+                        <label for="otherPet">Other</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Send Me A Note</legend>
+                    <label for="message">Your Message:</label>
+                    <br>
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        placeholder="Type your message here"></textarea>
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button>
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+
+        </form>
+
+        
+        <section>
+   
+        <p> Contact will@dev</p>
+        <address>
+          Margaritaville Island Reserve Rivera Cancùn <br />
+          Bahia Petempich Puerto Morelos, Mexico <br />
+          Colonia Morelos, Mexico 77580
+        </address>
+      </section>
+    </main>
+   <footer>
+
+      <p>
+      learn more with <abbr title="Mozila Developper Community"> <a> MDN </a></abbr>
+    </p>
+    &lt; &lt; &lt; &copy; <a>  will@dev </a> &gt; &gt; &gt;
+
+   </footer>
+     
+  </body>
+  
+</html>
